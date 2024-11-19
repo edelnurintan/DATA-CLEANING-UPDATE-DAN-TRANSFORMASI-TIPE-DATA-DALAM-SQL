@@ -140,7 +140,7 @@ HAVING COUNT(*) > 1;
 Pada ketiga tabel tidak ditemukan data duplikat 
 ## Manipulasi Data
 ### Update 
-1. Mengganti Zipcode berdasarkan City yang terdaftar
+#### Mengganti Zipcode berdasarkan City yang terdaftar
    ``` sql
    UPDATE e_customers
 SET ZipCode =
