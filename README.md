@@ -4,7 +4,7 @@ Pada proyek ini terdapat 3 tabel utama, yaitu Customers, Orders, dan Products:
 - Customers: Menyimpan data pelanggan.
 - Orders: Menyimpan data pesanan pelanggan.
 - Products: Menyimpan data produk yang dijual.
-- Kolom-kolom dari masing-masing tabel adalah sebagai berikut:
+Kolom-kolom dari masing-masing tabel adalah sebagai berikut:
 
 Tabel Customers:
 CustomerID, FirstName, LastName, Email, Phone, Address, City, ZipCode, SignupDate.
@@ -18,7 +18,7 @@ ProductID, ProductName, Category, Price, StockQuantity.
 Dataset https://www.kaggle.com/datasets/aymenberkani/data-cleaning-for-a-customer-database
 
 ## Transformasi Tipe Data
-### Tabel Customer
+### Tabel Customers
 ``` sql
 ALTER TABLE e_customers
 ALTER COLUMN CustomerID INT;
@@ -67,7 +67,7 @@ ALTER COLUMN OrderStatus VARCHAR (50);
 ALTER TABLE e_orders
 ALTER COLUMN TotalAmount DECIMAL (10 , 2);
 ```
-### Tabel Product
+### Tabel Products
 ``` sql ALTER TABLE [e_products (1)]
 ALTER COLUMN ProductID INT;
 
@@ -83,6 +83,39 @@ ALTER COLUMN Price DECIMAL (10, 2);
 ALTER TABLE [e_products (1)]
 ALTER COLUMN StockQuantity INT;
 ```
-
+## Data Cleaning
+### Menangani Nilai Kosong (NULL)
+```sql
+-------------- TABEL CUSTOMERS------------------
+SELECT *
+FROM e_customers
+WHERE CustomerID IS NULL
+   OR FirstName IS NULL
+   OR LastName IS NULL
+   OR Email IS NULL
+   OR Phone IS NULL
+   OR Address IS NULL
+   OR City IS NULL
+   OR ZipCode IS NULL;
+-------------- TABEL ORDERS------------------
+SELECT *
+FROM e_orders
+WHERE OrderID IS NULL
+   OR CustomerID IS NULL
+   OR ProductID IS NULL
+   OR OrderDate IS NULL
+   OR Quantity IS NULL
+   OR OrderStatus IS NULL
+   OR TotalAmount IS NULL;
+-------------- TABEL PRODUCTS------------------
+SELECT *
+FROM [e_products (1)]
+WHERE ProductID IS NULL
+   OR ProductName IS NULL
+   OR Category IS NULL
+   OR Price IS NULL
+   OR StockQuantity IS NULL;
+```
+Pada ketiga tabel tidak ditemukan data kosong 
 
 
