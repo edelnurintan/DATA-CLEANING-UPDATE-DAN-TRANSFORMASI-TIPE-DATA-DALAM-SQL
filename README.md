@@ -118,4 +118,26 @@ WHERE ProductID IS NULL
 ```
 Pada ketiga tabel tidak ditemukan data kosong 
 
+### Menangani Data Duplikat (Kususnya Pada Primary Key)
+``` sql
+-------------- TABEL CUSTOMERS------------------
+SELECT CustomerID, COUNT(*) AS Duplicate
+FROM e_customers
+GROUP BY CustomerID
+HAVING COUNT(*) > 1;
+-------------- TABEL ORDERS------------------
+SELECT OrderID, COUNT(*) AS Duplicate
+FROM e_orders
+GROUP BY OrderID
+HAVING COUNT(*) > 1;
+-------------- TABEL PRODUCTS------------------
+SELECT ProductID, COUNT(*) AS Duplicate
+FROM [e_products (1)]
+GROUP BY
+	ProductID
+HAVING COUNT(*) > 1;
+```
+Pada ketiga tabel tidak ditemukan data duplikat 
+
+
 
