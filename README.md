@@ -152,14 +152,13 @@ SET ZipCode =
 	END
 WHERE City IN ('Casablanca', 'Fes',  'Marrakech',  'Rabat');
 ```
-| CustomerID | FirstName | LastName | Email                     | Phone         | Address        | City       | ZipCode | SignupDate  |
-|------------|-----------|----------|---------------------------|---------------|----------------|------------|---------|-------------|
-| 1          | Pat       | Taylor   | pat.taylor@example.com    | 727-686-2648  | 101 Elm St.    | Marrakech  | 92840   | 2018-06-04  |
-| 2          | Eve       | Lee      | eve.lee@example.com       | 519-521-5199  | 456 Oak St.    | Casablanca | 43762   | 2018-08-26  |
-| 3          | Mallory   | Taylor   | mallory.taylor@example.com| 951-353-3557  | 202 Birch St.  | Marrakech  | 92840   | 2015-04-08  |
-| 4          | Pat       | Smith    | pat.smith@example.com     | 572-198-3200  | 202 Birch St.  | Marrakech  | 92840   | 2015-02-24  |
-| 5          | Charlie   | Johnson  | charlie.johnson@example.com | 960-995-5973 | 123 Maple St.  | Casablanca | 43762   | 2017-01-27  |
-| 6          | Sam       | Davis    | sam.davis@example.com     | 437-805-3869  | 202 Birch St.  | Rabat      | 26826   | 2016-02-10  |
+| ID | FirstName | LastName | City       | ZipCode |
+|----|-----------|----------|------------|---------|
+| 1  | Pat       | Taylor   | Marrakech  | 92840   |
+| 2  | Eve       | Lee      | Casablanca | 43762   |
+| 3  | Mallory   | Taylor   | Marrakech  | 92840   |
+| 4  | Pat       | Smith    | Marrakech  | 92840   |
+| 5  | Charlie   | Johnson  | Casablanca | 43762   |
+| 6  | Sam       | Davis    | Rabat      | 26826   |
 
-   
 
