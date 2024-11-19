@@ -142,6 +142,7 @@ Pada ketiga tabel tidak ditemukan data duplikat
 ### Update 
 1. Mengganti Tempat Tinggal Customer dengan ID = 1 manjadi jakarta
    sebelum
+   
 | CustomerID | FirstName | LastName  | Email                    | Phone           | Address       | City        | ZipCode | SignupDate |
 |------------|-----------|-----------|--------------------------|-----------------|---------------|-------------|---------|------------|
 | 1          | Pat       | Taylor    | pat.taylor@example.com   | 727-686-2648    | 101 Elm St.   | Marrakech   | 30000   | 2018-06-04 |
