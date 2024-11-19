@@ -154,12 +154,12 @@ Pada ketiga tabel tidak ditemukan data duplikat
 
 sesudah
 
-| CustomerID | FirstName | LastName | Email                     | Phone         | Address       | City       | ZipCode | SignupDate |
-|------------|-----------|----------|---------------------------|---------------|---------------|------------|---------|------------|
-| 1          | Pat       | Taylor   | pat.taylor@example.com    | 727-686-2648  | 101 Elm St.   | Jakarta    | 30000   | 2018-06-04 |
-| 2          | Eve       | Lee      | eve.lee@example.com       | 519-521-5199  | 456 Oak St.   | Casablanca | 20000   | 2018-08-26 |
-| 3          | Mallory   | Taylor   | mallory.taylor@example.com| 951-353-3557  | 202 Birch St. | Marrakech  | 10000   | 2015-04-08 |
-| 4          | Pat       | Smith    | pat.smith@example.com     | 572-198-3200  | 202 Birch St. | Marrakech  | 10000   | 2015-02-24 |
+| CustomerID | FirstName | LastName | Email                     | Phone           | Address       | City       | ZipCode | SignupDate |
+|------------|-----------|----------|---------------------------|-----------------|---------------|------------|---------|------------|
+| 1          | Pat       | Taylor   | pat.taylor@example.com    | 727-686-2648    | 101 Elm St.   | Jakarta    | 30000   | 2018-06-04 |
+| 2          | Eve       | Lee      | eve.lee@example.com       | 519-521-5199    | 456 Oak St.   | Casablanca | 20000   | 2018-08-26 |
+| 3          | Mallory   | Taylor   | mallory.taylor@example.com| 951-353-3557    | 202 Birch St. | Marrakech  | 10000   | 2015-04-08 |
+| 4          | Pat       | Smith    | pat.smith@example.com     | 572-198-3200    | 202 Birch St. | Marrakech  | 10000   | 2015-02-24 |
 
 
 
