@@ -1,4 +1,4 @@
-# DATA-CLEANING-UPDATE-DAN-TRANSFORMASI-TIPE-DATA-DALAM-SQL
+# TRANSFORMATION-CLEANING-MANIPULATE-DATA-SQL-DATA-DALAM-SQL
 Proyek ini bertujuan untuk menerapkan teknik data cleaning, update, dan transformasi tipe data menggunakan SQL guna memastikan kualitas dan integritas data dalam database customer. 
 Pada proyek ini terdapat 3 tabel utama, yaitu Customers, Orders, dan Products:
 - Customers: Menyimpan data pelanggan.
@@ -138,6 +138,17 @@ GROUP BY
 HAVING COUNT(*) > 1;
 ```
 Pada ketiga tabel tidak ditemukan data duplikat 
+## Manipulasi Data
+### Update 
+1. Mengganti Tempat Tinggal Customer dengan ID = 1 manjadi jakarta
+   sebelum
+   	| CustomerID | FirstName | LastName  | Email                    | Phone           | Address       | City        | ZipCode | SignupDate |
+|------------|-----------|-----------|--------------------------|-----------------|---------------|-------------|---------|------------|
+| 1          | Pat       | Taylor    | pat.taylor@example.com   | 727-686-2648    | 101 Elm St.   | Marrakech   | 30000   | 2018-06-04 |
+| 2          | Eve       | Lee       | eve.lee@example.com      | 519-521-5199    | 456 Oak St.   | Casablanca  | 20000   | 2018-08-26 |
+| 3          | Mallory   | Taylor    | mallory.taylor@example.com | 951-353-3557 | 202 Birch St. | Marrakech   | 10000   | 2015-04-08 |
+| 4          | Pat       | Smith     | pat.smith@example.com    | 572-193-3200    | 202 Birch St. | Marrakech   | 10000   | 2015-02-24 |
+| 5          | Charlie   | Johnson   | charlie.johnson@example.com | 960-985-5873 | 133 Maple St. | Marrakech   | 30000   | 2017-01-27 |
 
 
 
